@@ -1,0 +1,81 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@300;400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,400&display=swap');
+
+/* General Style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: url(images/bgImage.jpg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 35%;
+    height: 25%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 660px) {
+   .container {
+    height: 15%;
+   }
+}
+
+#timer {
+    padding: 1.5rem;
+    font-size: 3rem;
+}
+@media (max-width: 660px){
+    #timer {
+        padding: .6rem;
+        font-size: 1.8rem;
+    }
+}
+
+button {
+    margin: 0 .8rem;
+    border: none;
+    border-radius: 5px;
+}
+@media (max-width: 660px){
+    button {
+         margin: .4rem;
+        }
+    }
+
+button i {
+    font-size: 1.5rem;
+    padding: .6rem 1rem;
+    color: #fff;   
+}
+@media (max-width: 660px){
+button i{
+        padding: .4rem .8rem;
+        font-size: .8rem;
+    }
+}
+
+
+#play {
+    background-color: green;
+    border-radius: 5px;
+}
+#pause {
+    background-color: orange;
+}
+#reset-btn {
+    background-color: red;
+}
